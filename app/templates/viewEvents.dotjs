@@ -55,7 +55,7 @@
         {{?}}
       </div>
       <div class="col-xs-9 col-sm-2 col-md-2 col-lg-2 hide-overflow">{{= it.events.data[i].hosts[0].name }}</div>
-      <div class="hidden-xs col-sm-8 col-md-5 col-lg-7 hide-overflow">{{= it.events.data[i].relatedObject.description }}</div>
+      <div class="col-xs-12 col-sm-8 col-md-5 col-lg-7 hide-overflow">{{= it.events.data[i].relatedObject.description }}</div>
       <div class="hidden-xs hidden-sm col-md-3 col-lg-2 text-right hide-overflow">
         {{? !it.config.events.showHumanTimes }}
         {{= new Date(it.events.data[i].clock * 1000).toLocaleString() }}</div>
@@ -72,7 +72,7 @@
         {{?}}
       </div>
       <div class="col-xs-9 col-sm-2 col-md-2 col-lg-2 hide-overflow">{{= it.events.data[i].hosts[0].name }}</div>
-      <div class="hidden-xs col-sm-8 col-md-5 col-lg-7 hide-overflow">Host {{? it.events.data[i].relatedObject.status === '0' }}is up{{??}}is down{{?}}</div>
+      <div class="col-xs-12 col-sm-8 col-md-5 col-lg-7 hide-overflow">Host {{? it.events.data[i].relatedObject.status === '0' }}is up{{??}}is down{{?}}</div>
       <div class="hidden-xs hidden-sm col-md-3 col-lg-2 text-right hide-overflow">
         {{? !it.config.events.showHumanTimes }}
         {{= new Date(it.events.data[i].clock * 1000).toLocaleString() }}</div>
@@ -89,7 +89,7 @@
         {{?}}
       </div>
       <div class="col-xs-9 col-sm-2 col-md-2 col-lg-2 hide-overflow">{{= it.events.data[i].hosts[0].name }}</div>
-      <div class="hidden-xs col-sm-8 col-md-5 col-lg-7 hide-overflow">Service port {{= it.events.data[i].relatedObject.port }} {{? it.events.data[i].relatedObject.status === '0' }}is up{{??}}Host is down{{?}}</div>
+      <div class="col-xs-12 col-sm-8 col-md-5 col-lg-7 hide-overflow">Service port {{= it.events.data[i].relatedObject.port }} {{? it.events.data[i].relatedObject.status === '0' }}is up{{??}}Host is down{{?}}</div>
       <div class="hidden-xs hidden-sm col-md-3 col-lg-2 text-right hide-overflow">
         {{? !it.config.events.showHumanTimes }}
         {{= new Date(it.events.data[i].clock * 1000).toLocaleString() }}</div>
