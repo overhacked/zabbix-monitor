@@ -98,6 +98,11 @@
   <div class="triggers">
     <div class="triggers-header">
     </div>
+    {{? it.triggers.data.length == 0 }}
+    <div class="row triggers-row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">No triggers to show with the selected filters.</div>
+    </div>
+    {{?}}
     {{ for (var i = 0; i < it.triggers.data.length; i++) { }}
     <div id="trigger-data-{{= it.triggers.data[i].triggerid }}" class="row triggers-row">
       <div class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
